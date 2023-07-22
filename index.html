@@ -12,6 +12,15 @@
         .navbar a, h2 a {
             color: white;
         }
+        .social-icon {
+            color: #aaaaaa;
+            transition: color 0.2s;
+            text-decoration: none;
+            font-size: 40px;
+        }
+        .social-icon:hover {
+            color: #333333
+        }
     </style>
 </head>
 <body>
@@ -118,11 +127,15 @@
     <!-- Contact Section -->
     <section id="contact" class="container py-4">
         <h2>Contact</h2>
-        <p>Email: mbarah{at}northwestern{dot}edu</p>
-        <a href="https://www.linkedin.com/in/masoudbarah/" target="_blank">
+        
+        <a class="social-icon" href="mailto:mbarah@northwestern.edu" target="_blank">
+            <ion-icon name="at-outline"></ion-icon>
+        </a>
+        <!--p>Email: mbarah{at}northwestern{dot}edu</p-->
+        <a class="social-icon" href="https://www.linkedin.com/in/masoudbarah/" target="_blank">
             <ion-icon name="logo-linkedin"></ion-icon>
         </a>
-        <a href="https://github.com/mbarah" target="_blank">
+        <a class="social-icon" href="https://github.com/mbarah" target="_blank">
             <ion-icon name="logo-github"></ion-icon>
         </a>
     </section>
@@ -130,5 +143,8 @@
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
