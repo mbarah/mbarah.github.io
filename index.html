@@ -5,12 +5,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
-        .navbar, h2 {
-            background-color: #CBC3E3; /* purple color */
+        .navbar {
+            background-color: #6f42c1; /* purple color */
             color: white;
         }
-        .navbar a, h2 a {
+        .navbar a {
             color: white;
+        }
+        hr {
+            border-top: 1px solid #CBC3E3; /* purple color */
         }
         .social-icon {
             color: #aaaaaa;
@@ -22,9 +25,19 @@
             color: #333333;
             text-decoration: none;
         }
+        hr.style-two { border: 2px; height: 2px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0),#6f42c1, rgba(0, 0, 0, 0)); }
+        .section {
+            padding-top:10px !important;
+            padding-bottom:10px !important;
+        }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-</head>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+		<!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css"--> 
+		<link href="css/theme-default.min.css"
+		rel="stylesheet" type="text/css">
+    </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
@@ -38,7 +51,7 @@
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#awards">Awards and Honors</a></li>
                     <li class="nav-item"><a class="nav-link" href="#selected-publications">Selected Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#research-support"></a>Research Support</li>
+                    <li class="nav-item"><a class="nav-link" href="#research-support">Research Support</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -61,6 +74,7 @@
 
     <!-- Education Section -->
     <section id="education" class="container py-4">
+        <hr class="style-two"> 
         <h2>Education</h2>
         <ul>
             <li>
@@ -82,6 +96,7 @@
 
     <!-- Awards and Honors Section -->
     <section id="awards" class="container py-4">
+        <hr class="style-two"> 
         <h2>Awards and Honors</h2>
         <ul>
             <li> <a href="https://onlinelibrary.wiley.com/page/journal/15206750/homepage/harold_w_kuhn_award.htm">Recipient of 2022 Naval Research Logistc's Harold W. Kuhn Award</a></li>
@@ -110,10 +125,11 @@
                 <p>Barah, M., Seifi, A., & Ostrowski, J. (2019). Decomposing Train Scheduling Problem into Integer-Optimal Polytopes, Transportation Science 53(3), 763-772. <a href="https://pubsonline.informs.org/doi/abs/10.1287/trsc.2018.0848">https://doi.org/10.1287/trsc.2018.0848</a></p>
             </li>
         </ul>
-        <a class="ai ai-google-scholar-square ai-2x social-icon" href="https://scholar.google.com/citations?user=JJFTni8AAAAJ&hl=en"> Full List of Publications.</a>
+        <a href="https://scholar.google.com/citations?user=JJFTni8AAAAJ&hl=en"> Full List of Publications</a>
     </section>
 
     <section id="research-support" class="container py-4">
+        <hr class="style-two"> 
         <h2>Research Support</h2>
         <h4>Ongoing Research Support</h4>
         <strong>Rescuing Kidneys at Risk of Discard</strong><br>
@@ -130,6 +146,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="container py-4">
+        <hr class="style-two"> 
         <h2>Contact</h2>
         
         <a class="social-icon" href="mailto:mbarah@northwestern.edu" target="_blank">
